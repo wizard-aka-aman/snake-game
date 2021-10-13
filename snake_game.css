@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background:url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 70vh;
+    width: 100%; */
+}
+
+#board{
+    background:linear-gradient(rgb(0, 151, 0) , yellow);
+    width: 85vmin;  /* vmin vo hota h jo viewport height ya viewportwidth me se jo chota h vo vmin hota h  */
+    height: 85vmin;  /*vmax vis-vasa*/
+    border: 4px solid rgb(0, 61, 0);
+    position: absolute;
+    left: 47vw;
+    top: 8vh;
+    display: grid;
+    grid-template-rows: repeat(20 , 1fr);
+    grid-template-columns:repeat(20, 1fr);
+}
+
+.head{
+    background:linear-gradient(red , rgb(0, 0, 0));
+    /* background-image: url(download.jfif);
+    background-size: cover; */
+    border: 2px solid rgb(0, 0, 0);
+    transform: scale(1.05);
+    border-radius: 10px;
+    
+}
+#hiscoreBox{
+    position: relative;
+    top: 17vh;
+    left: -14vw;
+    font-size: 55px;
+    font-family: monospace;
+    font-weight: bolder;
+
+}
+
+#scoreBox{
+    position: absolute;
+    top: 6vh;
+    left: 30vw;
+    font-size: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+
+}
+
+.snake{
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: purple;
+}
+.food{
+    background-color: rgb(0, 75, 85);
+    border-radius: 150px;
+}
+/* .buttons{
+    display: ;
+} */
+@media only screen and (max-width: 400px){
+#board {
+    position: absolute;
+    width: 86%;
+    height: 50%;
+    left: 20px;
+    top: 91px;
+    }
+    #scoreBox{
+        font-size: 35px;
+        position: absolute;
+        top: 0px;
+        left: 47px;
+    }
+    #hiscoreBox{
+        font-size: 35px;
+        position: absolute;
+        top: 43px;
+        left: 158px;
+    }
+    body{
+        background: url('background.jpg');
+        /* background-size:; */
+        height: 100%;
+        width: 100%;
+    }
+    #buttonup{
+        font-size: 35px;
+        font-weight: bold;
+        position: absolute;
+        top: 70%;
+        left: 42%;
+    }
+    #buttondown{
+        font-size: 35px;
+        font-weight: bold;
+        position: absolute;
+        top: 88%;
+    }
+    #buttonleft{
+        font-size: 35px;
+        font-weight: bold;
+        position: absolute;
+        top: 79%;
+        right: 69%;        
+    }
+    #buttonright{
+        font-size: 35px;
+        font-weight: bold;
+        position: absolute;
+        top: 79%;
+        left: 67%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
